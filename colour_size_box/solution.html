@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>color box test</title>
+    <link rel="stylesheet" href="solution.css">
+</head>
+<body>
+    <div>
+        <form>
+            <label for="input_width">box width:</label>
+            <input type="text" id="input_width" />
+            <label for="input_height">box height:</label>
+            <input type="text" id="input_height" />
+            <br />
+            <br />
+            <label for="input_color">box color:</label>
+            <input type="text" id="input_color" />
+            <br />
+            <label id="alert" style="color:red"></label>
+            <br />
+            <button onclick="mySubmit(event)">Load the box</button>
+        </form>
+        <div id="box" style="">
+        </div>
+    </div>
+</body>
+
+<script src="solution.js"></script>
+
+</html>

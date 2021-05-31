@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alignment</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:
+                "r1c1 r1c2 r1c3"
+                "r2c1 r2c2 r2c3"
+                "r3c1 r3c2 r3c3";
+            grid-template-rows:140px 140px 140px;
+            grid-template-columns: 500px 500px 500px;
+            grid-gap: 10px;
+        }
+        #two1 {
+            top: 20px;
+            left: 20px;
+            position: relative;
+            background: green;
+        }
+        #two2 {
+            top: 20px;
+            left: 20px;
+            position: absolute;
+            background: green;
+        }
+
+        .parent1{
+            position: relative;
+            grid-area: r1c1;
+            border: 2px black dotted;
+            display: inline-block;
+        }
+        .parent2{
+            position: relative;
+            grid-area: r2c1;
+            border: 2px black dotted;
+            display: inline-block;
+        }
+        .parent3{
+            position: relative;
+            grid-area: r3c1;
+            border: 2px black dotted;
+        }
+        .box {
+            display: inline-block;
+            background: red;
+            width: 100px;
+            height: 100px;
+        }
+        .heroWord{
+            vertical-align: 25px;
+        }
+        .img-container{
+            width: 100px;
+            height: 200px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="parent1">
+            <div class="box" id="one1">One</div>
+            <div class="box" id="two1">Two</div>
+            <div class="box" id="three1">Three</div>
+            <div class="box" id="four1">Four</div>
+        </div>
+        <div class="parent2">
+            <div class="box" id="one2">One</div>
+            <div class="box" id="two2">Two</div>
+            <div class="box" id="three2">Three</div>
+            <div class="box" id="four2">Four</div>
+        </div>
+        <div class="parent3">
+            <p>
+                Let's
+                <span class="heroWord">Hack</span>
+<!--                <img class="img-container" src="gta.jpg"/>-->
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
